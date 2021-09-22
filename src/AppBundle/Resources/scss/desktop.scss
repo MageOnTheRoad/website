@@ -1,0 +1,234 @@
+@import '../public/fonts/inter/inter';
+@import '../public/fonts/kalam/stylesheet';
+
+body {
+    font-family: Inter, Arial;
+    font-size: 16px;
+    color: #5c5c5c;
+    line-height: 1.65;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/**
+ * =============== HEADER & FOOTER
+ */
+
+#header,
+#footer {
+    background: #db6628;
+    color: #fff;
+}
+
+#header-main,
+#header-menu-main,
+#content-section-main,
+#footer-main {
+    margin: 0 auto;
+    width: 960px;
+}
+
+
+
+/**
+ * =============== HEADER
+ */
+
+#header {
+    padding: 20px 0;
+}
+
+#header-matheus-gontijo {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 800;
+    display: block;
+    text-decoration: none;
+}
+
+#header-subtitle {
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
+    display: block;
+}
+
+#header-logo {
+    margin-right: 10px;
+    border: 6px solid #fff;
+    border-radius: 90px;
+    background: #fff;
+}
+
+#header-logo-mageontheroad {
+    word-spacing: 0;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+#header-logo-mage {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+#header-logo-ontheroad {
+    font-family: 'Kalam';
+    font-size: 35px;
+}
+
+#header-logo-motto {
+    display: block;
+    margin-top: -14px;
+    font-size: 14px;
+    color: #ffaf84;
+    font-style: italic;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+/**
+ * =============== HEADER MENU
+ */
+
+#header-menu {
+    background: #e6e6e6;
+    padding: 10px 10px 10px 0;
+    margin-bottom: 30px;
+
+    a {
+        text-decoration: none;
+        color: #717171;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    #header-menu-link-contact {
+        margin-right: 20px;
+    }
+}
+
+
+/**
+ * =============== FOOTER
+ */
+
+#footer {
+    padding: 50px;
+}
+
+#footer-contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+#footer-contact-based-in-brazil {
+    font-style: italic;
+    font-size: 14px;
+}
+
+#footer-contact-list li {
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+#footer-contact-list a {
+    color: #fff;
+}
+
+/**
+ * =============== HOME EPISODES
+ */
+
+#home-episodes {
+    margin-top: 40px;
+}
+
+.home-episode-row {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4e4e4;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+}
+
+.home-episode-title {
+    color: #626262;
+    font-size: 23px;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.home-episode-info {
+    display: block;
+    color: #cdcdcd;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+/**
+ * =============== ABOUT PAGE
+ */
+
+#about-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+#about-mage {
+    font-weight: bold;
+}
+
+#about-ontheroad {
+    font-family: Kalam, Inter, Arial;
+}
+
+#about-about-the-host {
+    margin-top: 40px;
+}
+
+#about-matheus-gontijo-photo {
+    border: 10px solid #d8d8d8;
+    border-radius: 110px;
+}
+
+
+/**
+ * =============== EPISODE PAGE
+ */
+
+.episode-audio-row {
+    margin: 30px 0;
+}
+
+.episode-audio-element {
+    width: 100%;
+    padding: 0;
+}
+
+#episode-title {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+
+#episode-date {
+    color: #c1c1c1;
+    font-style: italic;
+}
+
+#disqus_thread_wrapper {
+    margin-top: 60px;
+}

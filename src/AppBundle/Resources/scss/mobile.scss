@@ -1,0 +1,31 @@
+@media only screen and (max-width: 991px) {
+    #header-main,
+    #header-menu-main,
+    #content-section-main,
+    #footer-main {
+        width: auto;
+        overflow: hidden;
+        padding: 0 10px;
+    }
+
+    #header-main,
+    #header-menu-main,
+    #footer-main {
+        text-align: center;
+    }
+
+    #header-logo-mageontheroad {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #about-about-the-host {
+        text-align: center;
+    }
+
+    #about-podcast-text,
+    #about-the-host-text {
+        margin-top: 20px;
+    }
+}

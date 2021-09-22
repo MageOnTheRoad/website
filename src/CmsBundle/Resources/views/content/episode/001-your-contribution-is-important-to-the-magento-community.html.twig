@@ -1,0 +1,15 @@
+{% extends 'episode.html.twig' %}
+
+{% block title %}001 - Your contribution is important to the Magento Community{% endblock %}
+
+{% block body %}
+<h1 id="episode-title">001 - Your contribution is important to the Magento Community</h1>
+<div class="episode-audio-row row">
+    <audio controls class="episode-audio-element">
+        <source src="{{ block.getUrl("episodes/001-your-contribution-is-important-to-the-magento-community.mp3") }}" type="audio/mp3" />
+    </audio>
+</div>
+<p id="episode-date">09/24/2021</p>
+<p>There are several benefits for joining a community. There is nothing better than to be surrounded by talented people that collaborates one another. However, on the other hand, it's expected that all participants make efforts to contribute and are willing to dedicate some time in behalf of other. If everyone in the community contributes, even with a small contributions, it certainly becomes an attractive environment to be part of.</p>
+{{ parent() }}
+{% endblock %}

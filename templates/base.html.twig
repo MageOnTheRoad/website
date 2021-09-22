@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}Magento Podcast{% endblock %} | MageOnTheRoad Podcast | Magento Podcast</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="description" content="{% block meta_description %}{% endblock %}" />
+        <meta property="og:title" content="MageOnTheRoad - Podcast for the worldwide Magento Community">
+        <meta property="og:type" content="music.radio_station">
+        <meta property="og:url" content="{{ block.getBaseUrl() }}">
+        <meta property="og:image" content="{{ block.getUrl("images/mageontheroad-logo.jpg") }}">
+
+        {% block stylesheets %}
+            {% for file in encore_entry_css_files('app') %}
+                <link rel="stylesheet" href="{{ block.getUrl(file) }}" />
+            {% endfor %}
+        {% endblock %}
+        {% block javascripts_head %}{% endblock %}
+    </head>
+    <body>
+        <div id="header">
+            <div id="header-main">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-auto">
+                        <a href="{{ block.getBaseUrl() }}">
+                            <img id="header-logo" src="{{ block.getUrl('images/mageontheroad-logo.jpg') }}" alt="MageOnTheRoad Podcast - Magento Podcast" />
+                        </a>
+                    </div>
+                    <div class="col-lg-auto">
+                        <a href="{{ block.getBaseUrl() }}" id="header-logo-mageontheroad">
+                            <span id="header-logo-mage">Mage</span>
+                            <span id="header-logo-ontheroad">OnTheRoad</span>
+                        </a>
+                        <a href="{{ block.getBaseUrl() }}" id="header-logo-motto">podcast for the worldwide Magento community</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header-menu">
+            <div id="header-menu-main">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-auto">
+                        <a href="{{ block.getBaseUrl() }}">Episodes</a>
+                        <a href="{{ block.getUrl("about") }}">About</a>
+                        <a href="{{ block.getUrl("contact") }}" id="header-menu-link-contact">Contact</a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> {# @TODO: UPDATE LINK #}
+{# @TODO: ADD SPOTIFY #}
+{#                        <a href="https://spotify.com" target="_blank"><i class="fab fa-spotify"></i></a> #}{# @TODO: UPDATE LINK #}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content-section">
+            <div id="content-section-main">
+                {% block body %}{% endblock %}
+            </div>
+        </div>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0TPVJ0TBW"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Q0TPVJ0TBW');
+        </script>
+
+        <link href="{{ block.getUrl('fontawesome/css/all.min.css') }}" rel="stylesheet" async />
+
+        {% block javascripts_body_bottom %}{% endblock %}
+    </body>
+</html>

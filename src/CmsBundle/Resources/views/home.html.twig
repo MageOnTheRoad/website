@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Magento Developer & Consultant | Matheus Gontijo{% endblock %}
+
+{% block body %}
+<h1>Episodes</h1>
+<div id="home-episodes">
+{% for episode in block.getEpisodes() %}
+    <div class="home-episode-row row">
+        <div class="col-sm-12">
+            <a href="{{ episode.link|raw }}" class="home-episode-title">{{ episode.title }}</a>
+            <span class="home-episode-info">{{ episode.date }}&nbsp;&nbsp;-&nbsp;&nbsp;{{ episode.duration }}</span>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'episode.html.twig' %}
+
+{% block title %}000 - Introduction{% endblock %}
+
+{% block body %}
+<h1 id="episode-title">000 - Introduction</h1>
+<div class="episode-audio-row row">
+    <audio controls class="episode-audio-element">
+        <source src="{{ block.getUrl("episodes/000-introduction.mp3") }}" type="audio/mp3" />
+    </audio>
+</div>
+<p id="episode-date">09/24/2021</p>
+<p>Welcome to the <strong>MageOnTheRoad podcast!</strong> This is the intro episode, just setting up expectations. To know more about the host, please visit the website: <a href="https://www.matheusgontijo.com">matheusgontijo.com</a></p>
+<p>Hope to see you on the next episode!</p>
+{{ parent() }}
+{% endblock %}

@@ -1,0 +1,15 @@
+@mixin reset-float {
+    display: block;
+    content: ".";
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+@import "bootstrap";
+@import "flag-icon/sass/flag-icon";
+
+@import "desktop";
+@import "mobile";

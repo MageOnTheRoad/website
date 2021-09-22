@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+<h1 id="about-title" class="text-center"><span id="about-mage">Mage</span><span id="about-ontheroad">OnTheRoad</span> is a podcast for the Magento Community!</h1>
+<div class="row justify-content-md-center text-center">
+    <div class="col-sm-2">
+        <img src="{{ block.getUrl("images/about/podcast.png") }}" alt="Matheus Gontijo - Magento Developer" class="img-fluid">
+    </div>
+    <div id="about-podcast-text" class="col-sm-8">
+        <p>There are excellent subjects to be discussed in the Magento world. The purpose of this podcast is to bring information, updates, and have good conversations. Our main goal is to get the community informed and aware of the most relevant topics in our industry.</p>
+{# @TODO: ADD SPOTIFY LINK #}
+{#        <p>#}
+{#            <i class="fab fa-spotify"></i> <a href="https://spotify.com" target="_blank">Subscribe on Spotify!</a>#}
+{#        </p>#}
+    </div>
+</div>
+<div id="about-about-the-host" class="row justify-content-md-center">
+    <div class="col-sm-3">
+        <img src="{{ block.getUrl("images/about/matheus-gontijo.png") }}" alt="Matheus Gontijo - Magento Developer" id="about-matheus-gontijo-photo" class="img-fluid">
+    </div>
+    <div id="about-the-host-text" class="col-sm-6 text-center">
+        <h3>About the Host</h3>
+        <p><a href="https://www.matheusgontijo.com/" target="_blank"><strong>Matheus Gontijo</strong></a> is a Magento Developer and consultant that has built successful Magento stores for +{{ block.getYearsOfExperience() }} years.</p> {# @TODO: 11 YEARS should dynamic #}
+        <p>
+            <i class="fas fa-link"></i>&nbsp;&nbsp;<a href="https://www.matheusgontijo.com/" target="_blank">matheusgontijo.com</a>&nbsp;&nbsp;<br />
+            <i class="fab fa-twitter"></i>&nbsp;&nbsp;<a href="https://www.twitter.com/mhgontijo" target="_blank">@mhgontijo</a>&nbsp;&nbsp;
+            <i class="fab fa-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/matheus-gontijo-95989a70/" target="_blank">LinkedIn</a>&nbsp;&nbsp;
+            <i class="fab fa-github"></i>&nbsp;&nbsp;<a href="https://github.com/matheusgontijo" target="_blank">GitHub</a>
+        </p>
+    </div>
+</div>
+{% endblock %}
