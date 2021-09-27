@@ -48,6 +48,7 @@ class DynamicRouting extends Loader
         return [
             'episode/000-introduction',
             'episode/001-your-contribution-is-important-to-the-magento-community',
+            'episode/002-hyva-the-magento-2-frontend-revolution',
         ];
     }
 }

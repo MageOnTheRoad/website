@@ -1,0 +1,26 @@
+{% extends 'episode.html.twig' %}
+
+{% block title %}002 - Hyvä: The Magento 2 frontend revolution!{% endblock %}
+
+{% block body %}
+    <h1 id="episode-title">002 - Hyvä: The Magento 2 frontend revolution!</h1>
+    <div class="episode-audio-row row">
+        <audio controls class="episode-audio-element">
+            <source src="{{ block.getUrl("episodes/002-hyva-the-magento-2-frontend-revolution.mp3") }}" type="audio/mp3" />
+        </audio>
+    </div>
+    <p id="episode-date">09/27/2021</p>
+    <p><strong>Hyvä is a fast, lightweight, simple, minimalist, and modern theme for Magento 2.</strong></p>
+    <p>The default Luma theme has not been receiving many official updates from Magento core team and got stuck in the past. It has bottlenecks that really makes Magento slow and has bad developer experience, taking too much time to develop or customize features.</p>
+    <p>On the other hand, Hyvä is making a revolution on the Magento frontend world. It got rid of LESS, RequireJS, KnockoutJS, Grunt, Gulp tools that were introduced by Magento 2. Hyvä makes things much easier and brought back the developer experience. After years, developers are extremely excited and willing to work again with Magento.</p>
+    <br />
+    <p>Notes:</p>
+    <ul>
+        <li><a href="https://hyva.io/" target="_blank">Hyvä Website</a></li>
+        <li><a href="https://hyva.io/showcases" target="_blank">Hyvä Showcases</a> - several production instances that are running Hyvä</li>
+        <li><a href="https://www.fisheye.co.uk/2021/04/16/hyva-themes-a-guide-for-merchants/" target="_blank">Hyvä Themes: A Guide For Merchants</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dlxAe4mDO1s" target="_blank">Hyvä Release Party</a></li>
+        <li><a href="https://www.youtube.com/watch?v=qftuffCI8m8" target="_blank">Hyvä Meetup I - The Premiere with Ryan Copeland and John Hughes</a></li>
+    </ul>
+    {{ parent() }}
+{% endblock %}
